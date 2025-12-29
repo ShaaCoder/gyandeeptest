@@ -14,7 +14,7 @@ export default function Academics() {
         <div className="absolute inset-0">
           <Image
             src={SchoolImage}
-            alt="Bk Gyandeep Public School Campus"
+            alt="B.K.Gyan Deep Public School Campus"
             fill
             className="object-cover"
             priority
@@ -40,11 +40,11 @@ export default function Academics() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-background mb-6 leading-tight">
               Academics at{' '}
               <span className="bg-gradient-to-r from-background via-white to-background bg-clip-text text-transparent">
-                Bk Gyandeep Public School
+                B.K.Gyan Deep Public School
               </span>
             </h1>
             <p className="text-xl text-background/90 leading-relaxed max-w-2xl mx-auto">
-              A comprehensive educational program designed to nurture intellectual curiosity and academic excellence at every level.
+              Joyful learning adventures for Grades 1-8, sparking curiosity and building strong foundations through play and discovery.
             </p>
           </div>
         </div>
@@ -63,13 +63,13 @@ export default function Academics() {
           <Tabs defaultValue="primary" className="max-w-7xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
             <TabsList className="grid w-full grid-cols-3 mb-12 rounded-3xl bg-card border-border/50 p-1 shadow-lg">
               <TabsTrigger value="primary" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md rounded-2xl transition-all duration-300 py-3">
-                Primary School
+                Primary (1-5)
               </TabsTrigger>
               <TabsTrigger value="middle" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md rounded-2xl transition-all duration-300 py-3">
-                Middle School
+                Middle (6-8)
               </TabsTrigger>
-              <TabsTrigger value="senior" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md rounded-2xl transition-all duration-300 py-3">
-                Senior School
+              <TabsTrigger value="enrichment" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md rounded-2xl transition-all duration-300 py-3">
+                Enrichment
               </TabsTrigger>
             </TabsList>
 
@@ -81,7 +81,7 @@ export default function Academics() {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Primary School (Grades 1-5)</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                  Building strong foundations through interactive learning, hands-on activities, and play-based education.
+                  Magical beginnings with play-based fun, building confidence and love for learning through stories, games, and hands-on discovery.
                 </p>
               </div>
 
@@ -89,7 +89,7 @@ export default function Academics() {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-foreground mb-6 group-hover:text-primary">Curriculum Overview</h3>
                   <p className="text-muted-foreground mb-8 leading-relaxed text-lg group-hover:text-foreground/90">
-                    Our primary school curriculum focuses on developing fundamental skills in literacy, numeracy, and social interaction. We employ a child-centered approach that encourages exploration, creativity, and a love for learning.
+                    Our primary program sparks joy in learning with colorful activities, songs, and group play. Little ones explore the world at their own pace, making friends and discovering wonders every day.
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-8">
@@ -101,19 +101,19 @@ export default function Academics() {
                       <ul className="space-y-3">
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
                           <div className="w-2 h-2 bg-primary rounded-full" />
-                          English Language & Literature
+                          Fun with English & Stories
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
                           <div className="w-2 h-2 bg-primary rounded-full" />
-                          Mathematics
+                          Number Games & Math
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
                           <div className="w-2 h-2 bg-primary rounded-full" />
-                          Environmental Science
+                          Nature Explorations
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
                           <div className="w-2 h-2 bg-primary rounded-full" />
-                          Social Studies
+                          Our World & Friends
                         </li>
                       </ul>
                     </div>
@@ -121,24 +121,24 @@ export default function Academics() {
                     <div className="space-y-4">
                       <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
                         <Palette className="h-5 w-5 text-destructive" />
-                        Enrichment Activities
+                        Playful Activities
                       </h4>
                       <ul className="space-y-3">
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
                           <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Art & Craft
+                          Drawing & Crafts
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
                           <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Music & Dance
+                          Songs & Movement
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
                           <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Physical Education
+                          Outdoor Playtime
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
                           <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Language Labs
+                          Story Circles
                         </li>
                       </ul>
                     </div>
@@ -149,9 +149,9 @@ export default function Academics() {
               {/* Highlight Cards */}
               <div className="grid md:grid-cols-3 gap-6">
                 {[
-                  { emoji: '📖', title: 'Reading Program', desc: 'Structured phonics and guided reading sessions to build literacy skills.', color: 'from-primary/10 to-destructive/10' },
-                  { emoji: '🎮', title: 'Play-Based Learning', desc: 'Learning through play to develop cognitive and social skills.', color: 'from-destructive/10 to-primary/10' },
-                  { emoji: '👥', title: 'Small Groups', desc: 'Individualized attention with small class sizes for optimal learning.', color: 'from-primary/10 to-destructive/10' },
+                  { emoji: '📚', title: 'Storytime Magic', desc: 'Daily reading adventures to ignite imagination and love for books.', color: 'from-primary/10 to-destructive/10' },
+                  { emoji: '🧩', title: 'Puzzle Play', desc: 'Fun games that build thinking skills and teamwork.', color: 'from-destructive/10 to-primary/10' },
+                  { emoji: '🌈', title: 'Colorful Days', desc: 'Bright classrooms full of laughter and discovery.', color: 'from-primary/10 to-destructive/10' },
                 ].map((highlight, index) => (
                   <Card key={index} className={cn('group border-border/50 rounded-2xl p-6 hover:shadow-xl transition-all duration-700 animate-in fade-in-0 slide-in-from-bottom-4', `delay-${index * 200}`)}>
                     <CardContent className="p-0">
@@ -176,7 +176,7 @@ export default function Academics() {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Middle School (Grades 6-8)</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                  Developing critical thinking, analytical skills, and comprehensive subject knowledge through engaging pedagogy.
+                  Growing stronger with exciting challenges, friendships, and real-world explorations that build confidence and skills.
                 </p>
               </div>
 
@@ -184,7 +184,7 @@ export default function Academics() {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-foreground mb-6 group-hover:text-primary">Curriculum Overview</h3>
                   <p className="text-muted-foreground mb-8 leading-relaxed text-lg group-hover:text-foreground/90">
-                    The middle school curriculum bridges foundational learning with advanced concepts. Students explore subjects in greater depth while developing research skills, critical thinking, and independent learning abilities.
+                    Middle school is an adventure of discovery! Students dive deeper into subjects with fun projects, group challenges, and exciting field trips that connect learning to the big world around them.
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-8">
@@ -196,23 +196,23 @@ export default function Academics() {
                       <ul className="space-y-3">
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
                           <div className="w-2 h-2 bg-primary rounded-full" />
-                          English Language & Literature
+                          English Adventures
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
                           <div className="w-2 h-2 bg-primary rounded-full" />
-                          Mathematics & Algebra
+                          Math Mysteries
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
                           <div className="w-2 h-2 bg-primary rounded-full" />
-                          Integrated Science (Physics, Chemistry, Biology)
+                          Science Quests
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
                           <div className="w-2 h-2 bg-primary rounded-full" />
-                          Social Studies & Geography
+                          World Explorers
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
                           <div className="w-2 h-2 bg-primary rounded-full" />
-                          Second Language (Spanish/French)
+                          Fun with Hindi
                         </li>
                       </ul>
                     </div>
@@ -220,28 +220,28 @@ export default function Academics() {
                     <div className="space-y-4">
                       <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
                         <Palette className="h-5 w-5 text-destructive" />
-                        Elective & Activities
+                        Fun Electives
                       </h4>
                       <ul className="space-y-3">
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
                           <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Visual Arts
+                          Art Workshop
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
                           <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Performing Arts
+                          Music Jam
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
                           <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Sports & Athletics
+                          Sports Stars
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
                           <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Debate & Public Speaking
+                          Debate Fun
                         </li>
                         <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
                           <div className="w-2 h-2 bg-destructive rounded-full" />
-                          STEM Projects
+                          Coding Club
                         </li>
                       </ul>
                     </div>
@@ -252,14 +252,14 @@ export default function Academics() {
               {/* Highlight Cards */}
               <div className="grid md:grid-cols-3 gap-6">
                 {[
-                  { emoji: '🔬', title: 'Lab Work', desc: 'Hands-on experiments in well-equipped science laboratories.', color: 'from-primary/10 to-destructive/10' },
-                  { emoji: '💻', title: 'Technology Integration', desc: 'Digital literacy and computer science fundamentals.', color: 'from-destructive/10 to-primary/10' },
-                  { emoji: '🌱', title: 'Project-Based Learning', desc: 'Real-world projects fostering creativity and problem-solving.', color: 'from-primary/10 to-destructive/10' },
+                  { emoji: '🔬', title: 'Science Fun', desc: 'Cool experiments and nature hunts to spark wonder.', color: 'from-primary/10 to-destructive/10' },
+                  { emoji: '💻', title: 'Tech Explorers', desc: 'Simple coding and digital games for future creators.', color: 'from-destructive/10 to-primary/10' },
+                  { emoji: '🌍', title: 'World Friends', desc: 'Stories and maps to discover cultures and places.', color: 'from-primary/10 to-destructive/10' },
                 ].map((highlight, index) => (
                   <Card key={index} className={cn('group border-border/50 rounded-2xl p-6 hover:shadow-xl transition-all duration-700 animate-in fade-in-0 slide-in-from-bottom-4', `delay-${index * 200}`)}>
                     <CardContent className="p-0">
                       <div className="text-4xl mb-3 text-center">{highlight.emoji}</div>
-                      <h4 className="font-semibold mb-2 text-center group-hover:text-primary">
+                      <h4 className="font-semibold text-foreground mb-2 text-center group-hover:text-primary">
                         {highlight.title}
                       </h4>
                       <p className="text-muted-foreground text-sm text-center leading-relaxed group-hover:text-foreground/90">
@@ -271,138 +271,70 @@ export default function Academics() {
               </div>
             </TabsContent>
 
-            {/* Senior School Tab */}
-            <TabsContent value="senior" className="space-y-8 animate-in fade-in-0 slide-in-from-bottom-2 duration-700">
+            {/* Enrichment Tab */}
+            <TabsContent value="enrichment" className="space-y-8 animate-in fade-in-0 slide-in-from-bottom-2 duration-700">
               <div className="text-center mb-8">
                 <div className="w-24 h-24 bg-gradient-to-br from-destructive/10 to-primary/10 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <GraduationCap className="h-12 w-12 text-destructive" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Senior School (Grades 9-12)</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Enrichment Programs (Grades 1-8)</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                  Advanced academic preparation for higher education and professional success with specialized subject streams.
+                  Special adventures that make learning magical, from creative arts to outdoor explorations.
                 </p>
               </div>
 
               <Card className="group bg-card border-border/50 rounded-3xl hover:shadow-2xl transition-all duration-700">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-6 group-hover:text-primary">Curriculum Overview</h3>
+                  <h3 className="text-2xl font-bold text-foreground mb-6 group-hover:text-primary">Fun Beyond Books</h3>
                   <p className="text-muted-foreground mb-8 leading-relaxed text-lg group-hover:text-foreground/90">
-                    Our senior school program offers rigorous academic preparation aligned with national and international standards. Students choose specialized streams based on their interests and career goals, with comprehensive support for college admissions.
+                    Every day is an opportunity for wonder! Our enrichment sparks creativity, builds teamwork, and celebrates every child's unique talents through joyful activities.
                   </p>
 
-                  <div className="space-y-8">
-                    {/* Science Stream */}
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-4 flex items-center gap-2 text-destructive">
-                        <FlaskConical className="h-5 w-5" />
-                        Science Stream
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="space-y-4">
+                      <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                        <Palette className="h-5 w-5 text-primary" />
+                        Creative Sparks
                       </h4>
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <ul className="space-y-2 text-muted-foreground">
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Physics
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Chemistry
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Biology
-                          </li>
-                        </ul>
-                        <ul className="space-y-2 text-muted-foreground">
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Mathematics
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            English
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Computer Science (Elective)
-                          </li>
-                        </ul>
-                      </div>
+                      <ul className="space-y-3">
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
+                          <div className="w-2 h-2 bg-primary rounded-full" />
+                          Painting & Drawing
+                        </li>
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
+                          <div className="w-2 h-2 bg-primary rounded-full" />
+                          Story Creation
+                        </li>
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
+                          <div className="w-2 h-2 bg-primary rounded-full" />
+                          Puppet Shows
+                        </li>
+                      </ul>
                     </div>
 
-                    {/* Commerce Stream */}
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-4 flex items-center gap-2 text-destructive">
-                        <Calculator className="h-5 w-5" />
-                        Commerce Stream
+                    <div className="space-y-4">
+                      <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                        <Dumbbell className="h-5 w-5 text-destructive" />
+                        Active Fun
                       </h4>
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <ul className="space-y-2 text-muted-foreground">
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Accountancy
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Business Studies
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Economics
-                          </li>
-                        </ul>
-                        <ul className="space-y-2 text-muted-foreground">
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Mathematics
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            English
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Informatics (Elective)
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    {/* Humanities Stream */}
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-4 flex items-center gap-2 text-destructive">
-                        <Globe className="h-5 w-5" />
-                        Humanities Stream
-                      </h4>
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <ul className="space-y-2 text-muted-foreground">
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            History
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Geography
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Political Science
-                          </li>
-                        </ul>
-                        <ul className="space-y-2 text-muted-foreground">
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Sociology
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            English
-                          </li>
-                          <li className="flex items-center gap-2 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                            <div className="w-2 h-2 bg-destructive rounded-full" />
-                            Psychology (Elective)
-                          </li>
-                        </ul>
-                      </div>
+                      <ul className="space-y-3">
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
+                          <div className="w-2 h-2 bg-destructive rounded-full" />
+                          Playground Games
+                        </li>
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
+                          <div className="w-2 h-2 bg-destructive rounded-full" />
+                          Yoga & Dance
+                        </li>
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
+                          <div className="w-2 h-2 bg-destructive rounded-full" />
+                          Nature Walks
+                        </li>
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
+                          <div className="w-2 h-2 bg-destructive rounded-full" />
+                          Team Challenges
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </CardContent>
@@ -411,14 +343,14 @@ export default function Academics() {
               {/* Highlight Cards */}
               <div className="grid md:grid-cols-3 gap-6">
                 {[
-                  { emoji: '📝', title: 'College Prep', desc: 'Comprehensive guidance for college applications and entrance exams.', color: 'from-primary/10 to-destructive/10' },
-                  { emoji: '🎯', title: 'Career Counseling', desc: 'Professional guidance for career planning and goal setting.', color: 'from-destructive/10 to-primary/10' },
-                  { emoji: '🏆', title: 'Advanced Learning', desc: 'Honors courses and advanced placement opportunities.', color: 'from-primary/10 to-destructive/10' },
+                  { emoji: '🎪', title: 'Festival Fun', desc: 'Celebrating traditions with songs, dances, and crafts.', color: 'from-primary/10 to-destructive/10' },
+                  { emoji: '🌟', title: 'Talent Shows', desc: 'Showcasing skills and building confidence on stage.', color: 'from-destructive/10 to-primary/10' },
+                  { emoji: '🧑‍🔬', title: 'Mini Labs', desc: 'Simple science magic with bubbles and colors.', color: 'from-primary/10 to-destructive/10' },
                 ].map((highlight, index) => (
                   <Card key={index} className={cn('group border-border/50 rounded-2xl p-6 hover:shadow-xl transition-all duration-700 animate-in fade-in-0 slide-in-from-bottom-4', `delay-${index * 200}`)}>
                     <CardContent className="p-0">
                       <div className="text-4xl mb-3 text-center">{highlight.emoji}</div>
-                      <h4 className="font-semibold mb-2 text-center group-hover:text-primary">
+                      <h4 className="font-semibold text-foreground mb-2 text-center group-hover:text-primary">
                         {highlight.title}
                       </h4>
                       <p className="text-muted-foreground text-sm text-center leading-relaxed group-hover:text-foreground/90">
@@ -445,22 +377,22 @@ export default function Academics() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">
-              Beyond the Classroom
+              Beyond the Classroom (Grades 1-8)
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 text-center leading-relaxed">
-              We believe in holistic education that extends beyond textbooks. Our comprehensive co-curricular programs ensure students develop well-rounded personalities.
+              Every day brings new adventures! From playground laughs to creative crafts, we celebrate growth through play and friendship.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { emoji: '⚽', title: 'Sports & Athletics', color: 'from-primary/10 to-destructive/10' },
-                { emoji: '🎨', title: 'Arts & Crafts', color: 'from-destructive/10 to-primary/10' },
-                { emoji: '🎭', title: 'Drama & Theater', color: 'from-primary/10 to-destructive/10' },
-                { emoji: '🎵', title: 'Music & Dance', color: 'from-destructive/10 to-primary/10' },
-                { emoji: '🤖', title: 'Robotics Club', color: 'from-primary/10 to-destructive/10' },
-                { emoji: '📰', title: 'School Magazine', color: 'from-destructive/10 to-primary/10' },
-                { emoji: '🗣️', title: 'Debate Society', color: 'from-primary/10 to-destructive/10' },
-                { emoji: '🌍', title: 'Environmental Club', color: 'from-destructive/10 to-primary/10' },
+                { emoji: '⚽', title: 'Playground Games', color: 'from-primary/10 to-destructive/10' },
+                { emoji: '🎨', title: 'Art Corner', color: 'from-destructive/10 to-primary/10' },
+                { emoji: '🎭', title: 'Puppet Play', color: 'from-primary/10 to-destructive/10' },
+                { emoji: '🎵', title: 'Song Circle', color: 'from-destructive/10 to-primary/10' },
+                { emoji: '🧑‍🔬', title: 'Bubble Lab', color: 'from-primary/10 to-destructive/10' },
+                { emoji: '🌳', title: 'Nature Hunt', color: 'from-destructive/10 to-primary/10' },
+                { emoji: '🗣️', title: 'Story Share', color: 'from-primary/10 to-destructive/10' },
+                { emoji: '🤝', title: 'Friendship Club', color: 'from-destructive/10 to-primary/10' },
               ].map((activity, index) => (
                 <Card key={index} className={cn('group border-border/50 rounded-2xl p-6 text-center hover:shadow-xl transition-all duration-700 animate-in fade-in-0 slide-in-from-bottom-6', `delay-${index * 150}`)}>
                   <CardContent className="p-0">

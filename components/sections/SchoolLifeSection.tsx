@@ -6,35 +6,30 @@ import { Button } from '@/components/ui/button';
 import { Sparkles, ArrowRight, Users, Music, Users2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import SchoolImage from '../../schoolimage.png'
+import Sports from '../../public/images/im3.jpeg'
+import Arts from '../../public/images/img1.jpeg'
 const galleryItems = [
   { 
     label: 'Campus Life', 
-    description: 'Explore our modern facilities and green spaces designed for learning and play.',
+    description: 'Discover our colorful playgrounds, cozy classrooms, and safe green spaces perfect for young explorers in grades 1-8.',
     gradient: 'from-primary/20 to-primary/30',
-    image: {SchoolImage},
+    image: SchoolImage,
     icon: Users
   },
   { 
-    label: 'Sports', 
-    description: 'From soccer fields to indoor gyms, fostering teamwork and physical fitness.',
+    label: 'Sports & Play', 
+    description: 'Fun-filled games on playgrounds and fields, building teamwork and healthy habits for children in grades 1-8.',
     gradient: 'from-primary/10 to-destructive/20',
-    image: {SchoolImage},
+    image: Sports,
     icon: Users2
   },
-  { 
-    label: 'Arts & Culture', 
-    description: 'Unleash creativity through theater, music, and visual arts programs.',
+  { label: 'Arts & Creativity', 
+    description: 'Spark imagination through drawing, music, and storytelling activities tailored for young minds in grades 1-8.',
     gradient: 'from-primary/20 to-primary/30',
-    image: {SchoolImage},
+    image: Arts,
     icon: Music
   },
-  { 
-    label: 'Science Labs', 
-    description: 'Hands-on experiments in state-of-the-art labs sparking curiosity and discovery.',
-    gradient: 'from-primary/10 to-destructive/20',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    icon: Sparkles
-  },
+
 ];
 
 export function SchoolLifeSection() {
@@ -57,10 +52,10 @@ export function SchoolLifeSection() {
         {/* Modern header with gradient and staggered animation */}
         <div className="text-center mb-16 animate-in fade-in-0 zoom-in-95 duration-1000">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent leading-tight animate-in fade-in-0 slide-in-from-top-2 duration-700">
-            Life at School
+            Life at School (Grades 1-8)
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-in fade-in-0 slide-in-from-bottom-2 duration-700">
-            A glimpse into our vibrant school community and engaging activities that build lifelong memories and skills.
+            A joyful glimpse into our nurturing school community and engaging activities that foster growth, fun, and foundational skills for young learners.
           </p>
         </div>
 
@@ -78,7 +73,7 @@ export function SchoolLifeSection() {
               {/* Image with gradient overlay */}
               <div className={`relative h-64 ${item.gradient} group-hover:opacity-80 transition-opacity duration-500`}>
                 <Image
-                  src={SchoolImage}
+                  src={item.image}
                   alt={`${item.label} at Bk Gyandeep Public School`}
                   fill
                   className="object-cover"

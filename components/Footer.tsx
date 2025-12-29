@@ -24,7 +24,7 @@ export default function Footer() {
           {/* School Info Column */}
           <div className="animate-in fade-in-0 slide-in-from-left-4 duration-1000">
             <h3 className="text-background font-bold text-xl mb-4 bg-gradient-to-r from-white to-primary-foreground/50 bg-clip-text text-transparent">
-              Bk Gyandeep Public School
+              B.K.Gyan Deep Public School
             </h3>
             <p className="text-primary-foreground/80 text-sm leading-relaxed mb-6">
               Empowering minds, shaping futures. Excellence in education since 1995.
@@ -128,7 +128,7 @@ export default function Footer() {
         {/* Copyright with animation */}
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center animate-in fade-in-0 slide-in-from-bottom-2 duration-700 delay-600">
           <p className="text-primary-foreground/70 text-sm">
-            &copy; {new Date().getFullYear()} Bk Gyandeep Public School. All rights reserved.
+            &copy; {new Date().getFullYear()} B.K.Gyan Deep Public School. All rights reserved.
           </p>
         </div>
       </div>

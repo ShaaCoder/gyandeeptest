@@ -6,6 +6,7 @@ import { WhyChooseUsSection } from '@/components/sections/WhyChooseUsSection';
 import { AcademicProgramsSection } from '@/components/sections/AcademicProgramsSection';
 import { SchoolLifeSection } from '@/components/sections/SchoolLifeSection';
 import { CTASection } from '@/components/sections/CTASection';
+import VideoReelsSection from '@/components/sections/VideoReels';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <WhyChooseUsSection />
       <AcademicProgramsSection />
       <SchoolLifeSection />
+      <VideoReelsSection />
       <CTASection />
     </div>
   );

@@ -8,17 +8,17 @@ const programs = [
   {
     icon: Palette,
     title: 'Primary School',
-    description: 'Grades 1-5: Building strong foundations through interactive learning and play-based activities.',
+    description: 'Grades 1-5: Building strong foundations through interactive learning, play-based activities, and foundational literacy and numeracy skills.',
   },
   {
     icon: Book,
     title: 'Middle School',
-    description: 'Grades 6-8: Developing critical thinking and comprehensive subject knowledge.',
+    description: 'Grades 6-8: Developing critical thinking, subject mastery, and real-world skills in a supportive environment.',
   },
   {
     icon: GraduationCap,
-    title: 'Senior School',
-    description: 'Grades 9-12: Advanced studies preparing students for higher education and careers.',
+    title: 'Holistic Development',
+    description: 'Across Grades 1-8: Integrating academics with arts, sports, and values education to nurture well-rounded young learners.',
   },
 ];
 
@@ -42,10 +42,10 @@ export function AcademicProgramsSection() {
         {/* Modern header with layered animations */}
         <div className="text-center mb-16 animate-in fade-in-0 zoom-in-95 duration-1000">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent leading-tight animate-in fade-in-0 slide-in-from-top-2 duration-700">
-            Our Academic Programs
+            Our Academic Programs (Grades 1-8)
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-in fade-in-0 slide-in-from-bottom-2 duration-700">
-            Comprehensive education from foundational years through advanced studies.
+            Nurturing young minds from foundational years through middle school with engaging, balanced education.
           </p>
         </div>
 

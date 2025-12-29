@@ -22,7 +22,7 @@ export function HeroSection() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Welcome to{' '}
               <span className="bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">
-                Bk Gyandeep Public School
+                B.K.Gyan Deep Public School
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg">
@@ -70,7 +70,7 @@ export function HeroSection() {
               {/* Hero image */}
               <Image
                 src={SchoolImage}
-                alt="Bk Gyandeep Public School Campus"
+                alt="B.K.Gyan Deep Public School Campus"
                 fill
                 className="object-cover"
                 priority

@@ -24,7 +24,7 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl text-foreground hover:text-primary transition-colors">
             <GraduationCap className="h-8 w-8 text-primary" />
-            <span>Bk Gyandeep Public School</span>
+            <span>B.K.Gyan Deep Public School</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">

@@ -30,7 +30,7 @@ export default function About() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               About{' '}
               <span className="bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">
-                Bk Gyandeep Public School
+                B.K.Gyan Deep Public School
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
@@ -54,13 +54,13 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">Our Story</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-6">
               <p>
-                Founded in 1995, Bk Gyandeep Public School has been a beacon of educational excellence for over 28 years. What began as a small institution with a vision to provide quality education has grown into a thriving educational community serving hundreds of students from diverse backgrounds.
+                Founded in 1995, B.K.Gyan Deep Public School has been a beacon of educational excellence for over 28 years. What began as a small institution with a vision to provide quality education has grown into a thriving educational community serving hundreds of students from diverse backgrounds.
               </p>
               <p>
                 Our journey has been marked by continuous innovation, unwavering commitment to academic excellence, and a deep understanding of the evolving needs of modern education. We've consistently adapted our teaching methodologies, infrastructure, and curriculum to ensure our students receive the best possible education.
               </p>
               <p>
-                Today, Bk Gyandeep Public School stands as a testament to the power of dedicated educators, supportive parents, and motivated students working together towards a common goal: shaping well-rounded individuals ready to make a positive impact on the world.
+                Today, B.K.Gyan Deep Public School stands as a testament to the power of dedicated educators, supportive parents, and motivated students working together towards a common goal: shaping well-rounded individuals ready to make a positive impact on the world.
               </p>
             </div>
            
@@ -272,7 +272,7 @@ export default function About() {
           <div className="max-w-5xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">What Our Community Says</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 text-center leading-relaxed">
-              Hear from parents, students, and alumni about their experiences at Bk Gyandeep Public School.
+              Hear from parents, students, and alumni about their experiences at B.K.Gyan Deep Public School.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               {[
@@ -310,7 +310,7 @@ export default function About() {
           <div className="max-w-5xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">Our Leadership Team</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 text-center leading-relaxed">
-              Meet the dedicated leaders shaping the future of education at Bk Gyandeep Public School.
+              Meet the dedicated leaders shaping the future of education at B.K.Gyan Deep Public School.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               {[
@@ -414,7 +414,7 @@ export default function About() {
                         Dear Parents, Students, and Community Members,
                       </p>
                       <p>
-                        As Chairman of Bk Gyandeep Public School, it is with immense pride that I reflect on our institution's legacy of excellence since its founding in 1995. Our vision has always been to create an educational ecosystem that not only imparts knowledge but also instills values of integrity, innovation, and inclusivity.
+                        As Chairman of B.K.Gyan Deep Public School, it is with immense pride that I reflect on our institution's legacy of excellence since its founding in 1995. Our vision has always been to create an educational ecosystem that not only imparts knowledge but also instills values of integrity, innovation, and inclusivity.
                       </p>
                       <p>
                         In today's rapidly evolving world, education must transcend traditional boundaries. We are committed to equipping our students with the tools to navigate global challenges—be it through cutting-edge STEM programs, arts that inspire creativity, or leadership initiatives that build character. Our dedicated team works tirelessly to ensure every child discovers their potential in a nurturing, technology-enriched environment.
@@ -424,7 +424,7 @@ export default function About() {
                       </p>
                       <div className="mt-8 pt-6 border-t border-border/30 text-center lg:text-left">
                         <p className="font-bold text-foreground">Mr. Rajesh Kumar</p>
-                        <p className="text-muted-foreground text-sm">Chairman, Bk Gyandeep Public School</p>
+                        <p className="text-muted-foreground text-sm">Chairman, B.K.Gyan Deep Public School</p>
                       </div>
                     </div>
                   </div>
@@ -461,7 +461,7 @@ export default function About() {
                         Dear Parents and Students,
                       </p>
                       <p>
-                        It is my great privilege to welcome you to Bk Gyandeep Public School. As we navigate the ever-evolving landscape of education, our commitment remains steadfast: to provide an environment where every child can flourish academically, socially, and emotionally.
+                        It is my great privilege to welcome you to B.K.Gyan Deep Public School. As we navigate the ever-evolving landscape of education, our commitment remains steadfast: to provide an environment where every child can flourish academically, socially, and emotionally.
                       </p>
                       <p>
                         We believe that education extends far beyond textbooks and examinations. Our focus is on developing well-rounded individuals equipped with the knowledge, skills, and values needed to succeed in the 21st century. Through our dedicated faculty, modern facilities, and comprehensive curriculum, we ensure that each student receives the support and guidance they need to reach their full potential.
@@ -471,7 +471,7 @@ export default function About() {
                       </p>
                       <div className="mt-8 pt-6 border-t border-border/30 text-center lg:text-left">
                         <p className="font-bold text-foreground">Dr. Sarah Johnson</p>
-                        <p className="text-muted-foreground text-sm">Principal, Bk Gyandeep Public School</p>
+                        <p className="text-muted-foreground text-sm">Principal, B.K.Gyan Deep Public School</p>
                       </div>
                     </div>
                   </div>

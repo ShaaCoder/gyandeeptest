@@ -1,3 +1,4 @@
+
 "use client"
 import { Card, CardContent } from '@/components/ui/card';
 import { BookOpen, Users, Award, Trophy, Globe, Lightbulb, Activity, Sparkles, ArrowRight } from 'lucide-react';
@@ -6,38 +7,38 @@ import { cn } from '@/lib/utils';
 const features = [
   {
     icon: BookOpen,
-    title: 'Quality Education',
-    description: 'Comprehensive curriculum aligned with international standards, delivered by experienced educators.',
+    title: 'Foundational Learning',
+    description: 'Playful, interactive curriculum for Grades 1-8, building strong basics in reading, math, and exploration.',
     step: 1,
   },
   {
     icon: Users,
     title: 'Small Class Sizes',
-    description: 'Personalized attention with optimal student-teacher ratios for better learning outcomes.',
+    description: 'Personalized attention with low student-teacher ratios, ensuring every child in Grades 1-8 feels supported.',
     step: 2,
   },
   {
     icon: Award,
-    title: 'Expert Faculty',
-    description: 'Highly qualified and passionate teachers committed to nurturing each student\'s potential.',
+    title: 'Dedicated Faculty',
+    description: 'Caring, qualified teachers passionate about nurturing young minds and fostering curiosity in Grades 1-8.',
     step: 3,
   },
   {
     icon: Trophy,
-    title: 'Excellence Record',
-    description: 'Proven track record of academic excellence and outstanding student achievements.',
+    title: 'Proven Success',
+    description: 'Outstanding achievements in academics, arts, and sports for students in Grades 1-8.',
     step: 4,
   },
   {
     icon: Globe,
-    title: 'Global Perspective',
-    description: 'International curriculum preparing students for success in a globalized world.',
+    title: 'Global Awareness',
+    description: 'Introducing world cultures and languages through fun activities for Grades 1-8 learners.',
     step: 5,
   },
   {
     icon: Lightbulb,
-    title: 'Modern Facilities',
-    description: 'State-of-the-art infrastructure with smart classrooms and advanced learning resources.',
+    title: 'Child-Friendly Facilities',
+    description: 'Safe, colorful spaces with playgrounds, libraries, and labs designed for young explorers in Grades 1-8.',
     step: 6,
   },
 ];
@@ -62,13 +63,13 @@ export function WhyChooseUsSection() {
         <div className="text-center mb-16 animate-in fade-in-0 zoom-in-95 duration-1000">
           <div className="inline-flex items-center gap-2 text-primary mb-4 animate-in fade-in-0 slide-in-from-top-2 duration-700">
             <Activity className="h-6 w-6 animate-spin-slow" />
-            <span className="text-sm font-medium uppercase tracking-wide">Our Journey</span>
+            <span className="text-sm font-medium uppercase tracking-wide">Our Promise</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent animate-in fade-in-0 slide-in-from-top-4 duration-700">
-            Why Choose Us
+            Why Choose Us (Grades 1-8)
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-in fade-in-0 slide-in-from-bottom-2 duration-700">
-            Embark on a transformative educational path at Bk Gyandeep Public School, where innovation meets tradition.
+            A nurturing haven where young hearts and minds grow through joy, discovery, and care.
           </p>
         </div>
 
@@ -123,9 +124,9 @@ export function WhyChooseUsSection() {
         <div className="text-center animate-in fade-in-0 slide-in-from-top-2 duration-700 delay-900">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-8">
             {[
-              { label: '95%', desc: 'Graduation Rate', icon: '🎓' },
-              { label: '50+', desc: 'Acre Campus', icon: '🏫' },
-              { label: '100%', desc: 'Qualified Staff', icon: '👩‍🏫' },
+              { label: '200+', desc: 'Happy Students', icon: '😊' },
+              { label: '1:15', desc: 'Teacher Ratio', icon: '👩‍🏫' },
+              { label: '100%', desc: 'Safe Environment', icon: '🛡️' },
             ].map((stat, index) => (
               <div 
                 key={index} 

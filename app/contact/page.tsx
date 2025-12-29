@@ -42,7 +42,7 @@ export default function Contact() {
         <div className="absolute inset-0">
           <Image
             src={SchoolImage}
-            alt="Contact Bk Gyandeep Public School"
+            alt="Contact B.K.Gyan Deep Public School"
             fill
             className="object-cover"
             priority
@@ -68,7 +68,7 @@ export default function Contact() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-background mb-6 leading-tight">
               Get In Touch with{' '}
               <span className="bg-gradient-to-r from-background via-white to-background bg-clip-text text-transparent">
-                Bk Gyandeep Public School
+                B.K.Gyan Deep Public School
               </span>
             </h1>
             <p className="text-xl text-background/90 leading-relaxed max-w-2xl mx-auto">
