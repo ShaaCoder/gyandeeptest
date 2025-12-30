@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Target, Eye, Heart, Users, Building2, BookOpen, Sparkles, Quote, Award, Users2, Home, Calendar, Clock, Trophy, GraduationCap, BarChart3, Globe, Leaf } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import SchoolImage from '../../schoolimage.png'
+
 export default function About() {
   return (
     <div>
@@ -34,7 +35,7 @@ export default function About() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Discover the story behind our commitment to excellence in education and holistic student development.
+              Discover the story behind our commitment to excellence in foundational education and holistic development for students from Nursery to Class 8.
             </p>
           </div>
         </div>
@@ -54,20 +55,20 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">Our Story</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-6">
               <p>
-                Founded in 1995, B.K.Gyan Deep Public School has been a beacon of educational excellence for over 28 years. What began as a small institution with a vision to provide quality education has grown into a thriving educational community serving hundreds of students from diverse backgrounds.
+                Founded in 1995, B.K.Gyan Deep Public School has been a beacon of educational excellence for over 30 years. What began as a small institution with a vision to provide quality foundational education has grown into a thriving educational community serving hundreds of young learners from diverse backgrounds, from Nursery to Class 8.
               </p>
               <p>
-                Our journey has been marked by continuous innovation, unwavering commitment to academic excellence, and a deep understanding of the evolving needs of modern education. We've consistently adapted our teaching methodologies, infrastructure, and curriculum to ensure our students receive the best possible education.
+                Our journey has been marked by continuous innovation, unwavering commitment to academic excellence, and a deep understanding of the evolving needs of early and middle school education. We've consistently adapted our teaching methodologies, infrastructure, and curriculum to ensure our students receive the best possible foundational learning experience.
               </p>
               <p>
-                Today, B.K.Gyan Deep Public School stands as a testament to the power of dedicated educators, supportive parents, and motivated students working together towards a common goal: shaping well-rounded individuals ready to make a positive impact on the world.
+                Today, B.K.Gyan Deep Public School stands as a testament to the power of dedicated educators, supportive parents, and motivated young students working together towards a common goal: shaping well-rounded individuals ready to make a positive impact on the world.
               </p>
             </div>
            
             {/* Stats Grid */}
             <div className="grid md:grid-cols-3 gap-8 mt-16">
               {[
-                { number: '28+', label: 'Years of Excellence', icon: BookOpen },
+                { number: '30+', label: 'Years of Excellence', icon: BookOpen },
                 { number: '500+', label: 'Happy Students', icon: Users },
                 { number: '50+', label: 'Expert Teachers', icon: Building2 },
               ].map((stat, index) => {
@@ -90,7 +91,115 @@ export default function About() {
           </div>
         </div>
       </section>
+                {/* Chairman's Message Section */}
+      <section className="py-20 lg:py-32 bg-gradient-to-br from-primary/5 to-destructive/10 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/3 left-0 w-56 h-56 bg-primary/5 rounded-full blur-xl -translate-x-1/2 animate-float" />
+          <div className="absolute bottom-1/2 right-0 w-72 h-72 bg-destructive/5 rounded-full blur-xl translate-x-1/2 animate-pulse" />
+          <div className="absolute top-10 left-10 w-6 h-6">
+            <Sparkles className="h-6 w-6 text-primary/10 animate-spin-slow" />
+          </div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-5xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
+            <Card className="bg-card border-border/50 rounded-3xl shadow-2xl overflow-hidden">
+              <CardContent className="p-8 md:p-12 relative">
+                <div className="flex flex-col lg:flex-row gap-8 items-start">
+                  <div className="flex-shrink-0 lg:w-2/5">
+                    <div className="relative w-full aspect-[3/4] bg-gradient-to-br from-primary/10 to-destructive/10 rounded-2xl shadow-2xl overflow-hidden">
+                      <Image
+                        src="/images/chairmen.jpeg" // Adjust path as needed (e.g., from public/images/)
+                        alt="L.N BIDHURI, Chairman"
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        priority // Optional: Use if this section is above the fold
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1 text-left">
+                    <h2 className="text-3xl font-bold text-foreground mb-6">Message from the Chairman</h2>
+                    <div className="text-muted-foreground leading-relaxed space-y-4 prose prose-lg max-w-none">
+                      <p>
+                        Dear Parents, Students, and Community Members,
+                      </p>
+                      <p>
+                        As Chairman of B.K.Gyan Deep Public School, it is with immense pride that I reflect on our institution's legacy of excellence since its founding in 1995. Our vision has always been to create an educational ecosystem for young learners from Nursery to Class 8 that not only imparts foundational knowledge but also instills values of integrity, innovation, and inclusivity.
+                      </p>
+                      <p>
+                        In today's rapidly evolving world, early education must transcend traditional boundaries. We are committed to equipping our young students with the tools to navigate future challenges—be it through engaging play-based learning, foundational STEM programs, arts that inspire creativity, or leadership initiatives that build character. Our dedicated team works tirelessly to ensure every child discovers their potential in a nurturing, technology-enriched environment.
+                      </p>
+                      <p>
+                        I am grateful for the trust placed in us by our families and community. Together, let us continue shaping the leaders of tomorrow.
+                      </p>
+                    </div>
+                    <div className="mt-8 flex justify-start">
+                      <div className="bg-primary/10 border border-primary/20 rounded-2xl px-6 py-4 text-left">
+                        <p className="font-bold text-foreground text-lg">L.N BIDHURI</p>
+                        <p className="text-muted-foreground text-sm">Chairman, B.K.Gyan Deep Public School</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
+      {/* Principal Message Section */}
+      <section className="py-20 lg:py-32 bg-gradient-to-br from-muted/50 to-primary/5 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/3 left-0 w-56 h-56 bg-primary/5 rounded-full blur-xl -translate-x-1/2 animate-float" />
+          <div className="absolute bottom-1/2 right-0 w-72 h-72 bg-destructive/5 rounded-full blur-xl translate-x-1/2 animate-pulse" />
+          <div className="absolute top-10 left-10 w-6 h-6">
+            <Sparkles className="h-6 w-6 text-primary/10 animate-spin-slow" />
+          </div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-5xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
+            <Card className="bg-card border-border/50 rounded-3xl shadow-2xl overflow-hidden">
+              <CardContent className="p-8 md:p-12 relative">
+                <div className="flex flex-col lg:flex-row gap-8 items-start">
+                  <div className="flex-shrink-0 lg:w-2/5">
+                    <div className="relative w-full aspect-[3/4] bg-gradient-to-br from-primary/10 to-destructive/10 rounded-2xl shadow-2xl overflow-hidden">
+                      <Image
+                        src="/images/lailtprinciple.jpeg" // Adjust path as needed (e.g., from public/images/)
+                        alt="Lalit Bidhuri, Principal"
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-500"
+                        priority // Optional: Use if this section is above the fold
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1 text-left">
+                    <h2 className="text-3xl font-bold text-foreground mb-6">Message from the Principal</h2>
+                    <div className="text-muted-foreground leading-relaxed space-y-4 prose prose-lg max-w-none">
+                      <p>
+                        Dear Parents and Students,
+                      </p>
+                      <p>
+                        It is my great privilege to welcome you to B.K.Gyan Deep Public School. As we navigate the ever-evolving landscape of foundational education, our commitment remains steadfast: to provide an environment where every child from Nursery to Class 8 can flourish academically, socially, and emotionally.
+                      </p>
+                      <p>
+                        We believe that early education extends far beyond textbooks and examinations. Our focus is on developing well-rounded young individuals equipped with the foundational knowledge, skills, and values needed to succeed in the 21st century. Through our dedicated faculty, modern facilities, and comprehensive curriculum tailored for primary and middle school, we ensure that each student receives the support and guidance they need to reach their full potential.
+                      </p>
+                      <p>
+                        I invite you to join our vibrant community and experience firsthand the difference that quality foundational education can make.
+                      </p>
+                    </div>
+                    <div className="mt-8 flex justify-start">
+                      <div className="bg-primary/10 border border-primary/20 rounded-2xl px-6 py-4 text-left">
+                        <p className="font-bold text-foreground text-lg">Lalit Bidhuri</p>
+                        <p className="text-muted-foreground text-sm">Principal, B.K.Gyan Deep Public School</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
       {/* Vision & Mission Section */}
       <section className="py-20 lg:py-32 bg-muted relative overflow-hidden">
         <div className="absolute inset-0">
@@ -103,8 +212,8 @@ export default function About() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 animate-in fade-in-0 slide-in-from-top-4 duration-1000">
             {[
-              { icon: Eye, title: 'Our Vision', desc: 'To be a globally recognized institution that nurtures innovative thinkers, compassionate leaders, and lifelong learners who contribute positively to society. We envision a future where every student discovers their unique potential and develops the skills to thrive in an ever-changing world.' },
-              { icon: Target, title: 'Our Mission', desc: 'To provide a nurturing, inclusive, and stimulating learning environment that empowers students to achieve academic excellence, develop strong character, and become responsible global citizens. We are committed to fostering creativity, critical thinking, and a lifelong passion for learning.' },
+              { icon: Eye, title: 'Our Vision', desc: 'To be a globally recognized institution that nurtures innovative thinkers, compassionate young leaders, and lifelong learners from Nursery to Class 8 who contribute positively to society. We envision a future where every young student discovers their unique potential and develops the foundational skills to thrive in an ever-changing world.' },
+              { icon: Target, title: 'Our Mission', desc: 'To provide a nurturing, inclusive, and stimulating learning environment for students from Nursery to Class 8 that empowers them to achieve academic excellence, develop strong character, and become responsible global citizens. We are committed to fostering creativity, critical thinking, and a lifelong passion for learning through age-appropriate foundational education.' },
             ].map((item, index) => {
               const Icon = item.icon;
               return (
@@ -141,9 +250,9 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">Our Core Values</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { icon: Heart, title: 'Integrity', desc: 'Upholding honesty, transparency, and ethical behavior in all our actions.' },
-                { icon: BookOpen, title: 'Excellence', desc: 'Striving for the highest standards in education and character development.' },
-                { icon: Users, title: 'Community', desc: 'Building a supportive and inclusive environment for all stakeholders.' },
+                { icon: Heart, title: 'Integrity', desc: 'Upholding honesty, transparency, and ethical behavior in all our actions, guiding young minds from an early age.' },
+                { icon: BookOpen, title: 'Excellence', desc: 'Striving for the highest standards in foundational education and character development for Nursery to Class 8.' },
+                { icon: Users, title: 'Community', desc: 'Building a supportive and inclusive environment for all young learners, families, and educators.' },
               ].map((value, index) => {
                 const Icon = value.icon;
                 return (
@@ -180,16 +289,16 @@ export default function About() {
           <div className="max-w-5xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">Our Facilities</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 text-center leading-relaxed">
-              State-of-the-art infrastructure designed to foster learning, creativity, and holistic development.
+              Child-friendly infrastructure designed to foster learning, creativity, and holistic development for Nursery to Class 8.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { icon: Home, title: 'Modern Classrooms', desc: 'Smart classrooms equipped with interactive technology and comfortable learning environments.' },
-                { icon: Calendar, title: 'Library & Resources', desc: 'Extensive collection of books, digital resources, and quiet study spaces for research and reading.' },
-                { icon: Clock, title: 'Sports Complex', desc: 'Full-sized fields, indoor gymnasium, and fitness centers promoting physical health and teamwork.' },
-                { icon: Users2, title: 'Auditorium', desc: 'Multi-purpose hall for assemblies, performances, and cultural events with advanced audio-visual systems.' },
-                { icon: BookOpen, title: 'Science Labs', desc: 'Well-equipped laboratories for hands-on experiments in physics, chemistry, and biology.' },
-                { icon: Heart, title: 'Counseling Center', desc: 'Dedicated space for student wellness, career guidance, and emotional support services.' },
+                { icon: Home, title: 'Modern Classrooms', desc: 'Bright, interactive classrooms equipped with age-appropriate technology and comfortable seating for young learners.' },
+                { icon: Calendar, title: 'Library & Resources', desc: 'Vibrant collection of picture books, early readers, and digital story resources with cozy reading corners.' },
+                { icon: Clock, title: 'Play & Sports Areas', desc: 'Safe playgrounds, indoor play zones, and age-suited sports facilities promoting physical activity and teamwork.' },
+                { icon: Users2, title: 'Activity Hall', desc: 'Multi-purpose space for assemblies, creative performances, and group activities with child-safe audio-visual aids.' },
+                { icon: BookOpen, title: 'Discovery Labs', desc: 'Hands-on exploration labs for basic science experiments and sensory learning tailored to primary levels.' },
+                { icon: Heart, title: 'Wellness Corner', desc: 'Dedicated space for play therapy, emotional support, and early wellness guidance for young students.' },
               ].map((facility, index) => {
                 const Icon = facility.icon;
                 return (
@@ -226,16 +335,16 @@ export default function About() {
           <div className="max-w-5xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">Achievements & Awards</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 text-center leading-relaxed">
-              Celebrating our milestones and recognitions that reflect our dedication to excellence.
+              Celebrating our milestones and recognitions that reflect our dedication to foundational excellence.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { icon: Award, title: 'Best CBSE School 2024', desc: 'Recognized by Delhi Education Board for outstanding academic performance.' },
-                { icon: Trophy, title: 'Sports Excellence Award', desc: 'Champions in inter-school sports tournament for three consecutive years.' },
-                { icon: Sparkles, title: 'Innovation in Education', desc: 'Awarded for implementing cutting-edge STEM programs and tech integration.' },
-                { icon: Users2, title: 'Community Service Honor', desc: 'Commended for environmental initiatives and social outreach programs.' },
-                { icon: BookOpen, title: 'Literary Festival Winners', desc: 'Students excelled in national-level debate and essay competitions.' },
-                { icon: Heart, title: 'Wellness Program Certification', desc: 'Certified for comprehensive student mental health and wellness initiatives.' },
+                { icon: Award, title: 'Best CBSE Primary School 2025', desc: 'Recognized by Delhi Education Board for outstanding foundational academic performance.' },
+                { icon: Trophy, title: 'Junior Sports Excellence Award', desc: 'Champions in inter-school junior sports tournament for three consecutive years.' },
+                { icon: Sparkles, title: 'Innovation in Early Education', desc: 'Awarded for implementing engaging play-based STEM programs and tech integration for young learners.' },
+                { icon: Users2, title: 'Community Service Honor', desc: 'Commended for child-led environmental initiatives and social outreach programs.' },
+                { icon: BookOpen, title: 'Young Readers Festival Winners', desc: 'Students excelled in national-level storytelling and creative writing competitions.' },
+                { icon: Heart, title: 'Early Wellness Program Certification', desc: 'Certified for comprehensive child mental health and emotional wellness initiatives.' },
               ].map((achievement, index) => {
                 const Icon = achievement.icon;
                 return (
@@ -276,9 +385,9 @@ export default function About() {
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { quote: '"The teachers at Bk Gyandeep are not just educators; they are mentors who genuinely care about each child\'s growth. My son has flourished here."', author: 'Priya Sharma, Parent' },
-                { quote: '"The balance of academics and extracurriculars is perfect. I\'ve developed skills I never knew I had!"', author: 'Rahul Kumar, Student' },
-                { quote: '"As an alumnus, I credit Bk Gyandeep for building my foundation. The values learned here have guided my career success."', author: 'Dr. Anjali Mehta, Alumnus' },
+                { quote: '"The teachers at Bk Gyandeep are not just educators; they are mentors who genuinely care about each child\'s early growth. My daughter has flourished from Nursery onwards."', author: 'Priya Sharma, Parent' },
+                { quote: '"The balance of play-based learning and academics is perfect. I\'ve made so many friends and discovered new talents in Class 5!"', author: 'Rahul Kumar, Student' },
+                { quote: '"As an alumnus from Class 8, I credit Bk Gyandeep for building my strong foundation. The values learned here have guided my high school success."', author: 'Dr. Anjali Mehta, Alumnus' },
               ].map((testimonial, index) => (
                 <Card key={index} className="group bg-card border-border/50 rounded-3xl p-6 hover:shadow-2xl transition-all duration-700 animate-in fade-in-0 slide-in-from-bottom-6" style={{ animationDelay: `${index * 250}ms` } as React.CSSProperties}>
                   <CardContent className="p-0">
@@ -289,53 +398,6 @@ export default function About() {
                     <p className="text-foreground font-semibold text-sm text-center">
                       {testimonial.author}
                     </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership Team Section */}
-      <section className="py-20 lg:py-32 bg-background relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/2 left-0 w-48 h-48 bg-primary/5 rounded-full blur-xl -translate-x-1/2 animate-float" />
-          <div className="absolute bottom-1/4 right-0 w-56 h-56 bg-destructive/5 rounded-full blur-xl translate-x-1/2 animate-pulse" />
-          <div className="absolute top-20 right-20 w-6 h-6">
-            <Sparkles className="h-6 w-6 text-primary/10 animate-spin-slow" />
-          </div>
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-5xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">Our Leadership Team</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 text-center leading-relaxed">
-              Meet the dedicated leaders shaping the future of education at B.K.Gyan Deep Public School.
-            </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { name: 'Dr. Sarah Johnson', role: 'Principal', desc: 'With 25 years of experience, Dr. Johnson leads with a passion for innovative teaching and student-centered learning.', image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80' },
-                { name: 'Mr. Raj Patel', role: 'Vice Principal', desc: 'Expert in curriculum development and extracurricular programs, ensuring balanced growth for all students.', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80' },
-                { name: 'Ms. Priya Singh', role: 'Academic Director', desc: 'Champion of technology integration and teacher training, driving academic excellence across all grades.', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80' },
-              ].map((leader, index) => (
-                <Card key={index} className="group bg-card border-border/50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-700 animate-in fade-in-0 slide-in-from-bottom-6" style={{ animationDelay: `${index * 250}ms` } as React.CSSProperties}>
-                  <CardContent className="p-0">
-                    <div className="relative h-48">
-                      <Image
-                        src={leader.image}
-                        alt={leader.name}
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-foreground mb-2">{leader.name}</h3>
-                      <p className="text-muted-foreground mb-3">{leader.role}</p>
-                      <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/90 transition-colors">
-                        {leader.desc}
-                      </p>
-                    </div>
                   </CardContent>
                 </Card>
               ))}
@@ -357,14 +419,14 @@ export default function About() {
           <div className="max-w-5xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">Curriculum Philosophy</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 text-center leading-relaxed">
-              Our curriculum is designed to blend academic rigor with experiential learning, preparing students for global success.
+              Our CBSE-aligned curriculum for Nursery to Class 8 blends academic rigor with experiential, play-based learning to build strong foundations for global success.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               {[
-                { icon: GraduationCap, title: 'Holistic Approach', desc: 'Integrating CBSE curriculum with international best practices, focusing on 21st-century skills like critical thinking and collaboration.' },
-                { icon: BarChart3, title: 'Assessment Innovation', desc: 'Continuous evaluation through projects, portfolios, and formative assessments rather than rote memorization.' },
-                { icon: Globe, title: 'Global Perspective', desc: 'Incorporating world languages, cultural studies, and exchange programs to foster global citizenship.' },
-                { icon: Leaf, title: 'Sustainability Focus', desc: 'Embedding environmental education and sustainable practices across all subjects and school operations.' },
+                { icon: GraduationCap, title: 'Holistic Approach', desc: 'Integrating CBSE foundational curriculum with play-based and international best practices, focusing on early 21st-century skills like curiosity and collaboration.' },
+                { icon: BarChart3, title: 'Assessment Innovation', desc: 'Continuous, child-friendly evaluation through activities, observations, and portfolios rather than rote memorization.' },
+                { icon: Globe, title: 'Global Perspective', desc: 'Incorporating simple world languages, cultural stories, and virtual exchanges to foster early global awareness.' },
+                { icon: Leaf, title: 'Sustainability Focus', desc: 'Embedding fun environmental education and eco-friendly practices across all subjects and daily school life for young minds.' },
               ].map((philo, index) => {
                 const Icon = philo.icon;
                 return (
@@ -388,99 +450,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Chairman's Message Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-primary/5 to-destructive/10 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/3 left-0 w-56 h-56 bg-primary/5 rounded-full blur-xl -translate-x-1/2 animate-float" />
-          <div className="absolute bottom-1/2 right-0 w-72 h-72 bg-destructive/5 rounded-full blur-xl translate-x-1/2 animate-pulse" />
-          <div className="absolute top-10 left-10 w-6 h-6">
-            <Sparkles className="h-6 w-6 text-primary/10 animate-spin-slow" />
-          </div>
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-5xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
-            <Card className="bg-card border-border/50 rounded-3xl shadow-2xl overflow-hidden">
-              <CardContent className="p-8 md:p-12 relative">
-                <div className="flex flex-col lg:flex-row gap-8 items-center">
-                  <div className="flex-shrink-0 lg:w-1/3">
-                    <div className="w-32 h-32 bg-gradient-to-br from-primary to-destructive rounded-3xl flex items-center justify-center text-background text-6xl shadow-2xl animate-pulse">
-                      👨‍💼
-                    </div>
-                  </div>
-                  <div className="flex-1 text-center lg:text-left">
-                    <h2 className="text-3xl font-bold text-foreground mb-6">Message from the Chairman</h2>
-                    <div className="text-muted-foreground leading-relaxed space-y-4 prose prose-lg max-w-none">
-                      <p>
-                        Dear Parents, Students, and Community Members,
-                      </p>
-                      <p>
-                        As Chairman of B.K.Gyan Deep Public School, it is with immense pride that I reflect on our institution's legacy of excellence since its founding in 1995. Our vision has always been to create an educational ecosystem that not only imparts knowledge but also instills values of integrity, innovation, and inclusivity.
-                      </p>
-                      <p>
-                        In today's rapidly evolving world, education must transcend traditional boundaries. We are committed to equipping our students with the tools to navigate global challenges—be it through cutting-edge STEM programs, arts that inspire creativity, or leadership initiatives that build character. Our dedicated team works tirelessly to ensure every child discovers their potential in a nurturing, technology-enriched environment.
-                      </p>
-                      <p>
-                        I am grateful for the trust placed in us by our families and community. Together, let us continue shaping the leaders of tomorrow.
-                      </p>
-                      <div className="mt-8 pt-6 border-t border-border/30 text-center lg:text-left">
-                        <p className="font-bold text-foreground">Mr. Rajesh Kumar</p>
-                        <p className="text-muted-foreground text-sm">Chairman, B.K.Gyan Deep Public School</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Principal Message Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-muted/50 to-primary/5 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/3 left-0 w-56 h-56 bg-primary/5 rounded-full blur-xl -translate-x-1/2 animate-float" />
-          <div className="absolute bottom-1/2 right-0 w-72 h-72 bg-destructive/5 rounded-full blur-xl translate-x-1/2 animate-pulse" />
-          <div className="absolute top-10 left-10 w-6 h-6">
-            <Sparkles className="h-6 w-6 text-primary/10 animate-spin-slow" />
-          </div>
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-5xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
-            <Card className="bg-card border-border/50 rounded-3xl shadow-2xl overflow-hidden">
-              <CardContent className="p-8 md:p-12 relative">
-                <div className="flex flex-col lg:flex-row gap-8 items-center">
-                  <div className="flex-shrink-0 lg:w-1/3">
-                    <div className="w-32 h-32 bg-gradient-to-br from-primary to-destructive rounded-3xl flex items-center justify-center text-background text-6xl shadow-2xl animate-pulse">
-                      👨‍🏫
-                    </div>
-                  </div>
-                  <div className="flex-1 text-center lg:text-left">
-                    <h2 className="text-3xl font-bold text-foreground mb-6">Message from the Principal</h2>
-                    <div className="text-muted-foreground leading-relaxed space-y-4 prose prose-lg max-w-none">
-                      <p>
-                        Dear Parents and Students,
-                      </p>
-                      <p>
-                        It is my great privilege to welcome you to B.K.Gyan Deep Public School. As we navigate the ever-evolving landscape of education, our commitment remains steadfast: to provide an environment where every child can flourish academically, socially, and emotionally.
-                      </p>
-                      <p>
-                        We believe that education extends far beyond textbooks and examinations. Our focus is on developing well-rounded individuals equipped with the knowledge, skills, and values needed to succeed in the 21st century. Through our dedicated faculty, modern facilities, and comprehensive curriculum, we ensure that each student receives the support and guidance they need to reach their full potential.
-                      </p>
-                      <p>
-                        I invite you to join our vibrant community and experience firsthand the difference that quality education can make.
-                      </p>
-                      <div className="mt-8 pt-6 border-t border-border/30 text-center lg:text-left">
-                        <p className="font-bold text-foreground">Dr. Sarah Johnson</p>
-                        <p className="text-muted-foreground text-sm">Principal, B.K.Gyan Deep Public School</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+    
     </div>
   );
 }

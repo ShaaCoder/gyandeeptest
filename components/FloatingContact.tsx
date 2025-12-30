@@ -23,7 +23,7 @@ export default function FloatingContact() {
 
           <div className="space-y-2">
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/919953539988"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-3 bg-green-50 hover:bg-green-100 rounded-xl transition-colors group"
@@ -38,7 +38,7 @@ export default function FloatingContact() {
             </a>
 
             <a
-              href="tel:+1234567890"
+              href="tel:+911144759969"
               className="flex items-center gap-3 p-3 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors group"
             >
               <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
@@ -46,7 +46,7 @@ export default function FloatingContact() {
               </div>
               <div className="flex-1">
                 <div className="text-sm font-medium text-slate-800">Call Us</div>
-                <div className="text-xs text-slate-500">+1 (234) 567-890</div>
+                <div className="text-xs text-slate-500">+91 11 4475 9969</div>
               </div>
             </a>
           </div>

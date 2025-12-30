@@ -10,7 +10,8 @@ import { Label } from '@/components/ui/label';
 import { MapPin, Phone, Mail, Clock, Sparkles, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import SchoolImage from '../../schoolimage.png'
+import SchoolImage from '../../schoolimage.png';
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -23,10 +24,30 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const whatsappNumber = '918810524651'; // country code required
+    const message = `
+📩 *New Contact Form Submission*
+👤 Name: ${formData.name}
+📧 Email: ${formData.email}
+📞 Phone: ${formData.phone}
+📌 Subject: ${formData.subject}
+📝 Message:
+${formData.message}
+    `;
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappURL, '_blank');
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+      });
     }, 3000);
   };
 
@@ -72,7 +93,7 @@ export default function Contact() {
               </span>
             </h1>
             <p className="text-xl text-background/90 leading-relaxed max-w-2xl mx-auto">
-              We'd love to hear from you. Reach out to learn more about admissions, schedule a campus tour, or ask any questions.
+              We'd love to hear from you. Reach out to learn more about admissions for Nursery to Class 8, schedule a campus tour, or ask any questions.
             </p>
           </div>
         </div>
@@ -114,9 +135,8 @@ export default function Contact() {
                   </div>
                   <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary">Call Us</h3>
                   <p className="text-muted-foreground leading-relaxed group-hover:text-foreground/90">
-                    Main: +91 11 2045 6789 <br />
-                    Admissions: +91 11 2045 6790 <br />
-                    WhatsApp: +91 11 2045 6791
+                    Main: +91 99535 39988 <br />
+                    Admissions: +91 11 4475 9969
                   </p>
                 </CardContent>
               </Card>
@@ -145,8 +165,8 @@ export default function Contact() {
                   {submitted ? (
                     <div className="bg-primary/10 border border-primary/20 rounded-3xl p-8 text-center animate-pulse">
                       <Sparkles className="h-12 w-12 text-primary mx-auto mb-4" />
-                      <h3 className="text-xl font-semibold text-primary mb-2">Message Sent!</h3>
-                      <p className="text-muted-foreground">Thank you for contacting us. We'll get back to you soon.</p>
+                      <h3 className="text-xl font-semibold text-primary mb-2">WhatsApp Opened Successfully!</h3>
+                      <p className="text-muted-foreground">Your message has been sent via WhatsApp. We'll respond shortly.</p>
                     </div>
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-6">
@@ -187,7 +207,7 @@ export default function Contact() {
                             onChange={handleChange}
                             required
                             className="mt-2 h-12 rounded-2xl border-border/50 focus-visible:ring-primary/30"
-                            placeholder="+91 11 2045 6789"
+                            placeholder="+91 99535 39988"
                           />
                         </div>
                       </div>
@@ -219,8 +239,8 @@ export default function Contact() {
                       </div>
 
                       <Button type="submit" className="w-full h-12 bg-gradient-to-r from-primary to-destructive hover:from-primary/90 hover:to-destructive/90 text-primary-foreground rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
-                        Send Message
-                        <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                        Send via WhatsApp
+                        <ArrowRight className="h-5 w-5 ml-2 transition-transform duration-300" />
                       </Button>
                     </form>
                   )}
@@ -236,15 +256,15 @@ export default function Contact() {
                 <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-destructive/10 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
                   <Clock className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary">Office Hours</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary">School Hours</h3>
                 <div className="space-y-4 text-muted-foreground group-hover:text-foreground/90">
                   <div className="flex justify-between py-3 px-4 bg-muted/50 rounded-2xl group-hover:bg-primary/5 transition-colors">
                     <span>Monday - Friday:</span>
-                    <span className="font-semibold text-foreground">8:00 AM - 5:00 PM</span>
+                    <span className="font-semibold text-foreground">8:00 AM - 3:30 PM</span>
                   </div>
                   <div className="flex justify-between py-3 px-4 bg-muted/50 rounded-2xl group-hover:bg-primary/5 transition-colors">
                     <span>Saturday:</span>
-                    <span className="font-semibold text-foreground">9:00 AM - 2:00 PM</span>
+                    <span className="font-semibold text-foreground">9:00 AM - 12:00 PM</span>
                   </div>
                   <div className="flex justify-between py-3 px-4 bg-muted/50 rounded-2xl group-hover:bg-primary/5 transition-colors">
                     <span>Sunday:</span>
@@ -294,29 +314,46 @@ export default function Contact() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-in fade-in-0 zoom-in-95 duration-1000">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-background via-white/90 to-background bg-clip-text -webkit-background-clip-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-background via-white/90 to-background bg-clip-text text-transparent">
               Schedule a Campus Tour
             </h2>
             <p className="text-primary-foreground/90 mb-10 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-              Experience our facilities firsthand and meet our dedicated faculty. We offer personalized campus tours every weekday. Contact us to schedule your visit.
+              Experience our child-friendly facilities firsthand and meet our dedicated faculty. We offer personalized campus tours every weekday for prospective Nursery to Class 8 families. Contact us to schedule your visit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="tel:+911120456789">
-                <Button size="lg" className="bg-background text-primary hover:bg-muted hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-background/20">
+              <Link href="tel:+919953539988">
+                <Button size="lg" className="bg-background text-foreground hover:bg-muted hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-background/20">
                   Call to Schedule
-                  <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-5 w-5 ml-2 transition-transform duration-300" />
                 </Button>
               </Link>
-              <Link href="mailto:admissions@bkgyandeep.edu">
-                <Button size="lg" variant="outline" className="border-background text-background hover:bg-background/10 hover:text-primary transition-all duration-300 shadow-xl">
+              {/* <Link href="mailto:admissions@bkgyandeep.edu">
+                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary transition-all duration-300 shadow-xl">
                   Email Admissions
-                  <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-5 w-5 ml-2 transition-transform duration-300" />
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
       </section>
+
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0) rotate(0deg); }
+          50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        .animate-float {
+          animation: float 8s ease-in-out infinite;
+        }
+        @keyframes spin-slow {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+          animation: spin-slow 12s linear infinite;
+        }
+      `}</style>
     </div>
   );
 }

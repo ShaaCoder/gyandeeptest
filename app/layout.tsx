@@ -8,22 +8,21 @@ import FloatingContact from '@/components/FloatingContact';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Bright Future School - Empowering Minds, Shaping Futures',
-  description: 'Premier educational institution providing quality education from primary to senior levels with modern facilities and experienced faculty.',
+  title: 'B.K.Gyan Deep Public School - Nurturing Young Minds Since 1995',
+  description: 'Excellence in foundational education from Nursery to Class 8. Holistic development, innovative learning, and a safe environment in Okhla, Delhi.',
   openGraph: {
     images: [
       {
-        url: 'https://bolt.new/static/og_default.png',
+        url: '/school-hero.png', // Your hero image in /public
+        width: 1200,
+        height: 630,
+        alt: 'B.K.Gyan Deep Public School Campus',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: [
-      {
-        url: 'https://bolt.new/static/og_default.png',
-      },
-    ],
+    images: ['/school-hero.png'],
   },
 };
 

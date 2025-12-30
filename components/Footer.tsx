@@ -32,9 +32,9 @@ export default function Footer() {
             <div className="flex gap-3">
               {[
                 { icon: Facebook, href: 'https://facebook.com' },
-                { icon: Twitter, href: 'https://twitter.com' },
+                // { icon: Twitter, href: 'https://twitter.com' },
                 { icon: Instagram, href: 'https://instagram.com' },
-                { icon: Youtube, href: 'https://youtube.com' },
+                // { icon: Youtube, href: 'https://youtube.com' },
               ].map((social, index) => {
                 const Icon = social.icon;
                 return (
@@ -89,10 +89,19 @@ export default function Footer() {
               <li className="flex items-center gap-3 text-sm group">
                 <Phone className="h-4 w-4 flex-shrink-0 text-primary-foreground/80 group-hover:text-background transition-colors" />
                 <Link
-                  href="tel:+911120456789"
+                  href="tel:+919953539988"
                   className="text-primary-foreground/80 group-hover:text-background transition-colors hover:underline"
                 >
-                  +91 11 2045 6789
+                  +91 99535 39988
+                </Link>
+              </li>
+              <li className="flex items-center gap-3 text-sm group">
+                <Phone className="h-4 w-4 flex-shrink-0 text-primary-foreground/80 group-hover:text-background transition-colors" />
+                <Link
+                  href="tel:+911144759969"
+                  className="text-primary-foreground/80 group-hover:text-background transition-colors hover:underline"
+                >
+                  +91 11 4475 9969
                 </Link>
               </li>
               <li className="flex items-center gap-3 text-sm group">
