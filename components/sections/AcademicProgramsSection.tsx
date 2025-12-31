@@ -7,18 +7,18 @@ import { cn } from '@/lib/utils';
 const programs = [
   {
     icon: Palette,
-    title: 'Primary School',
-    description: 'Grades 1-5: Building strong foundations through interactive learning, play-based activities, and foundational literacy and numeracy skills.',
+    title: 'Early Years (Nursery - KG)',
+    description: 'Play-based foundational learning for Nursery to KG: Fostering curiosity, social skills, and early literacy through engaging activities and nurturing environments.',
   },
   {
     icon: Book,
-    title: 'Middle School',
-    description: 'Grades 6-8: Developing critical thinking, subject mastery, and real-world skills in a supportive environment.',
+    title: 'Primary School',
+    description: 'Grades 1-5: Building strong foundations through interactive learning, foundational literacy, numeracy, and creative exploration.',
   },
   {
     icon: GraduationCap,
-    title: 'Holistic Development',
-    description: 'Across Grades 1-8: Integrating academics with arts, sports, and values education to nurture well-rounded young learners.',
+    title: 'Middle School',
+    description: 'Grades 6-8: Developing critical thinking, subject mastery, leadership, and real-world skills in a supportive, holistic environment.',
   },
 ];
 
@@ -42,10 +42,10 @@ export function AcademicProgramsSection() {
         {/* Modern header with layered animations */}
         <div className="text-center mb-16 animate-in fade-in-0 zoom-in-95 duration-1000">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent leading-tight animate-in fade-in-0 slide-in-from-top-2 duration-700">
-            Our Academic Programs (Grades 1-8)
+            Our Academic Programs (Nursery to Class 8)
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-in fade-in-0 slide-in-from-bottom-2 duration-700">
-            Nurturing young minds from foundational years through middle school with engaging, balanced education.
+            Nurturing young minds from early years through middle school with engaging, balanced, and holistic education.
           </p>
         </div>
 

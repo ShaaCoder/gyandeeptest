@@ -44,7 +44,7 @@ export default function Academics() {
               </span>
             </h1>
             <p className="text-xl text-background/90 leading-relaxed max-w-2xl mx-auto">
-              Joyful learning adventures for Grades 1-8, sparking curiosity and building strong foundations through play and discovery.
+              Joyful learning adventures for Nursery to Class 8, sparking curiosity and building strong foundations through play and discovery.
             </p>
           </div>
         </div>
@@ -60,18 +60,113 @@ export default function Academics() {
           </div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <Tabs defaultValue="primary" className="max-w-7xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
+          <Tabs defaultValue="early" className="max-w-7xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
             <TabsList className="grid w-full grid-cols-3 mb-12 rounded-3xl bg-card border-border/50 p-1 shadow-lg">
+              <TabsTrigger value="early" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md rounded-2xl transition-all duration-300 py-3">
+                Early Years (Nursery-KG)
+              </TabsTrigger>
               <TabsTrigger value="primary" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md rounded-2xl transition-all duration-300 py-3">
                 Primary (1-5)
               </TabsTrigger>
               <TabsTrigger value="middle" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md rounded-2xl transition-all duration-300 py-3">
                 Middle (6-8)
               </TabsTrigger>
-              <TabsTrigger value="enrichment" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md rounded-2xl transition-all duration-300 py-3">
-                Enrichment
-              </TabsTrigger>
             </TabsList>
+
+            {/* Early Years Tab */}
+            <TabsContent value="early" className="space-y-8 animate-in fade-in-0 slide-in-from-bottom-2 duration-700">
+              <div className="text-center mb-8">
+                <div className="w-24 h-24 bg-gradient-to-br from-primary/10 to-destructive/10 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <BookOpen className="h-12 w-12 text-primary" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Early Years (Nursery to KG)</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                  Magical beginnings with play-based fun, building confidence and love for learning through stories, games, and hands-on discovery.
+                </p>
+              </div>
+
+              <Card className="group bg-card border-border/50 rounded-3xl hover:shadow-2xl transition-all duration-700">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-foreground mb-6 group-hover:text-primary">Curriculum Overview</h3>
+                  <p className="text-muted-foreground mb-8 leading-relaxed text-lg group-hover:text-foreground/90">
+                    Our early years program sparks joy in learning with colorful activities, songs, and group play. Little ones explore the world at their own pace, making friends and discovering wonders every day.
+                  </p>
+
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="space-y-4">
+                      <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                        <BookOpen className="h-5 w-5 text-primary" />
+                        Core Explorations
+                      </h4>
+                      <ul className="space-y-3">
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
+                          <div className="w-2 h-2 bg-primary rounded-full" />
+                          Fun with Colors & Shapes
+                        </li>
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
+                          <div className="w-2 h-2 bg-primary rounded-full" />
+                          Counting Games
+                        </li>
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
+                          <div className="w-2 h-2 bg-primary rounded-full" />
+                          Nature Sensory Play
+                        </li>
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
+                          <div className="w-2 h-2 bg-primary rounded-full" />
+                          Simple Stories
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                        <Palette className="h-5 w-5 text-destructive" />
+                        Joyful Activities
+                      </h4>
+                      <ul className="space-y-3">
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
+                          <div className="w-2 h-2 bg-destructive rounded-full" />
+                          Finger Painting
+                        </li>
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
+                          <div className="w-2 h-2 bg-destructive rounded-full" />
+                          Rhythm & Rhymes
+                        </li>
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
+                          <div className="w-2 h-2 bg-destructive rounded-full" />
+                          Sand & Water Play
+                        </li>
+                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
+                          <div className="w-2 h-2 bg-destructive rounded-full" />
+                          Circle Time Fun
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Highlight Cards */}
+              <div className="grid md:grid-cols-3 gap-6">
+                {[
+                  { emoji: '🧸', title: 'Toy Discoveries', desc: 'Exploring textures and sounds through safe play.', color: 'from-primary/10 to-destructive/10' },
+                  { emoji: '🎵', title: 'Baby Rhymes', desc: 'Singing and clapping to build language joy.', color: 'from-destructive/10 to-primary/10' },
+                  { emoji: '🌈', title: 'Sensory Rainbow', desc: 'Bright colors and gentle touches for wonder.', color: 'from-primary/10 to-destructive/10' },
+                ].map((highlight, index) => (
+                  <Card key={index} className={cn('group border-border/50 rounded-2xl p-6 hover:shadow-xl transition-all duration-700 animate-in fade-in-0 slide-in-from-bottom-4', `delay-${index * 200}`)}>
+                    <CardContent className="p-0">
+                      <div className="text-4xl mb-3 text-center">{highlight.emoji}</div>
+                      <h4 className="font-semibold text-foreground mb-2 text-center group-hover:text-primary">
+                        {highlight.title}
+                      </h4>
+                      <p className="text-muted-foreground text-sm text-center leading-relaxed group-hover:text-foreground/90">
+                        {highlight.desc}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
 
             {/* Primary School Tab */}
             <TabsContent value="primary" className="space-y-8 animate-in fade-in-0 slide-in-from-bottom-2 duration-700">
@@ -270,97 +365,6 @@ export default function Academics() {
                 ))}
               </div>
             </TabsContent>
-
-            {/* Enrichment Tab */}
-            <TabsContent value="enrichment" className="space-y-8 animate-in fade-in-0 slide-in-from-bottom-2 duration-700">
-              <div className="text-center mb-8">
-                <div className="w-24 h-24 bg-gradient-to-br from-destructive/10 to-primary/10 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                  <GraduationCap className="h-12 w-12 text-destructive" />
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Enrichment Programs (Grades 1-8)</h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                  Special adventures that make learning magical, from creative arts to outdoor explorations.
-                </p>
-              </div>
-
-              <Card className="group bg-card border-border/50 rounded-3xl hover:shadow-2xl transition-all duration-700">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-6 group-hover:text-primary">Fun Beyond Books</h3>
-                  <p className="text-muted-foreground mb-8 leading-relaxed text-lg group-hover:text-foreground/90">
-                    Every day is an opportunity for wonder! Our enrichment sparks creativity, builds teamwork, and celebrates every child's unique talents through joyful activities.
-                  </p>
-
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-4">
-                      <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                        <Palette className="h-5 w-5 text-primary" />
-                        Creative Sparks
-                      </h4>
-                      <ul className="space-y-3">
-                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                          <div className="w-2 h-2 bg-primary rounded-full" />
-                          Painting & Drawing
-                        </li>
-                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                          <div className="w-2 h-2 bg-primary rounded-full" />
-                          Story Creation
-                        </li>
-                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-primary/5 transition-colors">
-                          <div className="w-2 h-2 bg-primary rounded-full" />
-                          Puppet Shows
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div className="space-y-4">
-                      <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                        <Dumbbell className="h-5 w-5 text-destructive" />
-                        Active Fun
-                      </h4>
-                      <ul className="space-y-3">
-                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
-                          <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Playground Games
-                        </li>
-                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
-                          <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Yoga & Dance
-                        </li>
-                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
-                          <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Nature Walks
-                        </li>
-                        <li className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl group-hover:bg-destructive/5 transition-colors">
-                          <div className="w-2 h-2 bg-destructive rounded-full" />
-                          Team Challenges
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Highlight Cards */}
-              <div className="grid md:grid-cols-3 gap-6">
-                {[
-                  { emoji: '🎪', title: 'Festival Fun', desc: 'Celebrating traditions with songs, dances, and crafts.', color: 'from-primary/10 to-destructive/10' },
-                  { emoji: '🌟', title: 'Talent Shows', desc: 'Showcasing skills and building confidence on stage.', color: 'from-destructive/10 to-primary/10' },
-                  { emoji: '🧑‍🔬', title: 'Mini Labs', desc: 'Simple science magic with bubbles and colors.', color: 'from-primary/10 to-destructive/10' },
-                ].map((highlight, index) => (
-                  <Card key={index} className={cn('group border-border/50 rounded-2xl p-6 hover:shadow-xl transition-all duration-700 animate-in fade-in-0 slide-in-from-bottom-4', `delay-${index * 200}`)}>
-                    <CardContent className="p-0">
-                      <div className="text-4xl mb-3 text-center">{highlight.emoji}</div>
-                      <h4 className="font-semibold text-foreground mb-2 text-center group-hover:text-primary">
-                        {highlight.title}
-                      </h4>
-                      <p className="text-muted-foreground text-sm text-center leading-relaxed group-hover:text-foreground/90">
-                        {highlight.desc}
-                      </p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </TabsContent>
           </Tabs>
         </div>
       </section>
@@ -377,7 +381,7 @@ export default function Academics() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto animate-in fade-in-0 slide-in-from-top-4 duration-1000">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">
-              Beyond the Classroom (Grades 1-8)
+              Beyond the Classroom (Nursery to Class 8)
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 text-center leading-relaxed">
               Every day brings new adventures! From playground laughs to creative crafts, we celebrate growth through play and friendship.

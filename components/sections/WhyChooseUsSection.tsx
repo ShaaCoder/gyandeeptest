@@ -1,4 +1,3 @@
-
 "use client"
 import { Card, CardContent } from '@/components/ui/card';
 import { BookOpen, Users, Award, Trophy, Globe, Lightbulb, Activity, Sparkles, ArrowRight } from 'lucide-react';
@@ -8,37 +7,37 @@ const features = [
   {
     icon: BookOpen,
     title: 'Foundational Learning',
-    description: 'Playful, interactive curriculum for Grades 1-8, building strong basics in reading, math, and exploration.',
+    description: 'Playful, interactive curriculum for Nursery to Class 8, building strong basics in reading, math, and exploration.',
     step: 1,
   },
   {
     icon: Users,
     title: 'Small Class Sizes',
-    description: 'Personalized attention with low student-teacher ratios, ensuring every child in Grades 1-8 feels supported.',
+    description: 'Personalized attention with low student-teacher ratios, ensuring every child from Nursery to Class 8 feels supported.',
     step: 2,
   },
   {
     icon: Award,
     title: 'Dedicated Faculty',
-    description: 'Caring, qualified teachers passionate about nurturing young minds and fostering curiosity in Grades 1-8.',
+    description: 'Caring, qualified teachers passionate about nurturing young minds and fostering curiosity from Nursery to Class 8.',
     step: 3,
   },
   {
     icon: Trophy,
     title: 'Proven Success',
-    description: 'Outstanding achievements in academics, arts, and sports for students in Grades 1-8.',
+    description: 'Outstanding achievements in academics, arts, and sports for students from Nursery to Class 8.',
     step: 4,
   },
   {
     icon: Globe,
     title: 'Global Awareness',
-    description: 'Introducing world cultures and languages through fun activities for Grades 1-8 learners.',
+    description: 'Introducing world cultures and languages through fun activities for Nursery to Class 8 learners.',
     step: 5,
   },
   {
     icon: Lightbulb,
     title: 'Child-Friendly Facilities',
-    description: 'Safe, colorful spaces with playgrounds, libraries, and labs designed for young explorers in Grades 1-8.',
+    description: 'Safe, colorful spaces with playgrounds, libraries, and labs designed for young explorers from Nursery to Class 8.',
     step: 6,
   },
 ];
@@ -66,7 +65,7 @@ export function WhyChooseUsSection() {
             <span className="text-sm font-medium uppercase tracking-wide">Our Promise</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent animate-in fade-in-0 slide-in-from-top-4 duration-700">
-            Why Choose Us (Grades 1-8)
+            Why Choose Us (Nursery to Class 8)
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-in fade-in-0 slide-in-from-bottom-2 duration-700">
             A nurturing haven where young hearts and minds grow through joy, discovery, and care.

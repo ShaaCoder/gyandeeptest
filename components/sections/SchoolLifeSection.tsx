@@ -11,20 +11,20 @@ import Arts from '../../public/images/img1.jpeg'
 const galleryItems = [
   { 
     label: 'Campus Life', 
-    description: 'Discover our colorful playgrounds, cozy classrooms, and safe green spaces perfect for young explorers in grades 1-8.',
+    description: 'Discover our colorful playgrounds, cozy classrooms, and safe green spaces perfect for young explorers from Nursery to Class 8.',
     gradient: 'from-primary/20 to-primary/30',
     image: SchoolImage,
     icon: Users
   },
   { 
     label: 'Sports & Play', 
-    description: 'Fun-filled games on playgrounds and fields, building teamwork and healthy habits for children in grades 1-8.',
+    description: 'Fun-filled games on playgrounds and fields, building teamwork and healthy habits for children from Nursery to Class 8.',
     gradient: 'from-primary/10 to-destructive/20',
     image: Sports,
     icon: Users2
   },
   { label: 'Arts & Creativity', 
-    description: 'Spark imagination through drawing, music, and storytelling activities tailored for young minds in grades 1-8.',
+    description: 'Spark imagination through drawing, music, and storytelling activities tailored for young minds from Nursery to Class 8.',
     gradient: 'from-primary/20 to-primary/30',
     image: Arts,
     icon: Music
@@ -52,7 +52,7 @@ export function SchoolLifeSection() {
         {/* Modern header with gradient and staggered animation */}
         <div className="text-center mb-16 animate-in fade-in-0 zoom-in-95 duration-1000">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent leading-tight animate-in fade-in-0 slide-in-from-top-2 duration-700">
-            Life at School (Grades 1-8)
+            Life at School (Nursery to Class 8)
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-in fade-in-0 slide-in-from-bottom-2 duration-700">
             A joyful glimpse into our nurturing school community and engaging activities that foster growth, fun, and foundational skills for young learners.

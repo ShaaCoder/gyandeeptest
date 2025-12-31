@@ -19,31 +19,31 @@ import Link from 'next/link';
 const videoReels = [
   {
     id: 1,
-    title: 'Dance Fun (Grades 1-3)',
+    title: 'Dance Fun (Nursery to Class 3)',
     src: '/images/dance.mp4',
     duration: '0:45',
   },
   {
     id: 2,
-    title: 'Independence Day Joy (Grades 4-6)',
+    title: 'Independence Day Joy (Classes 4-6)',
     src: '/images/independenceday.mp4',
     duration: '1:20',
   },
   {
     id: 3,
-    title: 'Janmashtami Stories (Grades 1-5)',
+    title: 'Janmashtami Stories (Nursery to Class 5)',
     src: '/images/janamastami.mp4',
     duration: '0:55',
   },
   {
     id: 4,
-    title: 'Teachers Day Thanks (Grades 6-8)',
+    title: 'Teachers Day Thanks (Classes 6-8)',
     src: '/images/teachersday.mp4',
     duration: '1:10',
   },
   {
     id: 5,
-    title: 'Science Sparks (Grades 3-7)',
+    title: 'Science Sparks (Classes 3-7)',
     src: '/images/chandrayan.mp4',
     duration: '1:30',
   },
@@ -111,7 +111,7 @@ export default function VideoReelsSection() {
         {/* Header */}
         <div className="text-center mb-12 animate-in fade-in-0 zoom-in-95 duration-1000">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-destructive bg-clip-text text-transparent">
-            Video Moments (Grades 1–8)
+            Video Moments (Nursery to Class 8)
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Swipe left to right to explore joyful moments. Only pure video —
