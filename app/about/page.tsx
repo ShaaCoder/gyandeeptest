@@ -1,10 +1,14 @@
+'use client'
+
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Eye, Heart, Users, Building2, BookOpen, Sparkles, Quote, Award, Users2, Home, Calendar, Clock, Trophy, GraduationCap, BarChart3, Globe, Leaf } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import SchoolImage from '../../schoolimage.png'
-
+import SchoolImage from '../../schoolimage.png';
+import ChairmanImage from '../../public/images/chairmen.jpeg'; // Adjust relative path to your public/images/ folder (e.g., '../../../public/' if in app/about/page.tsx)
+import PrincipalImage from '../../public/images/lailtprinciple.jpeg'
 export default function About() {
   return (
     <div>
@@ -105,14 +109,19 @@ export default function About() {
             <Card className="bg-card border-border/50 rounded-3xl shadow-2xl overflow-hidden">
               <CardContent className="p-8 md:p-12 relative">
                 <div className="flex flex-col lg:flex-row gap-8 items-start">
-                  <div className="flex-shrink-0 lg:w-2/5">
+                  <div className="flex-shrink-0 lg:w-2/5 w-full">
                     <div className="relative w-full aspect-[3/4] bg-gradient-to-br from-primary/10 to-destructive/10 rounded-2xl shadow-2xl overflow-hidden">
                       <Image
-                        src="/images/chairmen.jpeg" // Adjust path as needed (e.g., from public/images/)
+                        src={ChairmanImage}
                         alt="L.N BIDHURI, Chairman"
                         fill
+                        sizes="(max-width: 1024px) 100vw, 40vw"
                         className="object-cover hover:scale-105 transition-transform duration-500"
-                        priority // Optional: Use if this section is above the fold
+                        priority
+                        placeholder="blur"
+                        onError={(e) => {
+                          console.error('Chairman image failed to load:', e);
+                        }}
                       />
                     </div>
                   </div>
@@ -160,14 +169,19 @@ export default function About() {
             <Card className="bg-card border-border/50 rounded-3xl shadow-2xl overflow-hidden">
               <CardContent className="p-8 md:p-12 relative">
                 <div className="flex flex-col lg:flex-row gap-8 items-start">
-                  <div className="flex-shrink-0 lg:w-2/5">
+                  <div className="flex-shrink-0 lg:w-2/5 w-full">
                     <div className="relative w-full aspect-[3/4] bg-gradient-to-br from-primary/10 to-destructive/10 rounded-2xl shadow-2xl overflow-hidden">
                       <Image
-                        src="/images/lailtprinciple.jpeg" // Adjust path as needed (e.g., from public/images/)
+                        src={PrincipalImage}
                         alt="Lalit Bidhuri, Principal"
                         fill
+                        sizes="(max-width: 1024px) 100vw, 40vw"
                         className="object-cover hover:scale-105 transition-transform duration-500"
-                        priority // Optional: Use if this section is above the fold
+                        priority
+                        placeholder="blur"
+                        onError={(e) => {
+                          console.error('Principal image failed to load:', e);
+                        }}
                       />
                     </div>
                   </div>

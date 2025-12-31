@@ -107,10 +107,10 @@ export default function Footer() {
               <li className="flex items-center gap-3 text-sm group">
                 <Mail className="h-4 w-4 flex-shrink-0 text-primary-foreground/80 group-hover:text-background transition-colors" />
                 <Link
-                  href="mailto:admissions@bkgyandeep.edu"
+                  href="mailto:lalitbidhuri07@gmail.com"
                   className="text-primary-foreground/80 group-hover:text-background transition-colors hover:underline"
                 >
-                  admissions@bkgyandeep.edu
+                  lalitbidhuri07@gmail.com
                 </Link>
               </li>
             </ul>
@@ -121,8 +121,7 @@ export default function Footer() {
             <h3 className="text-background font-semibold mb-4 text-lg">School Hours</h3>
             <ul className="space-y-3 text-sm">
               {[
-                { day: 'Monday - Friday', time: '8:00 AM - 3:30 PM' },
-                { day: 'Saturday', time: '9:00 AM - 12:00 PM' },
+                { day: 'Monday - Saturday', time: '8:00 AM - 1:30 PM' },
                 { day: 'Sunday', time: 'Closed' },
               ].map((hour, index) => (
                 <li key={index} className="flex justify-between items-center py-2 px-3 rounded-lg bg-primary-foreground/5 hover:bg-primary-foreground/10 transition-colors group">

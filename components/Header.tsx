@@ -1,9 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
@@ -23,7 +24,13 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl text-foreground hover:text-primary transition-colors">
-            <GraduationCap className="h-8 w-8 text-primary" />
+            <Image
+              src="/images/logo.png"
+              alt="B.K.Gyan Deep Public School Logo"
+              width={32}
+              height={32}
+              className="h-8 w-8 object-contain"
+            />
             <span>B.K.Gyan Deep Public School</span>
           </Link>
 

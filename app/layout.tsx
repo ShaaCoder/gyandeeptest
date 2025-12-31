@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'B.K.Gyan Deep Public School - Nurturing Young Minds Since 1995',
   description: 'Excellence in foundational education from Nursery to Class 8. Holistic development, innovative learning, and a safe environment in Okhla, Delhi.',
+  icons: {
+    icon: '/favicon.png', // Updated: Points to your new favicon in /public/
+  },
   openGraph: {
     images: [
       {

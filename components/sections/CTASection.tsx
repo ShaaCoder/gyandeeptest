@@ -45,7 +45,7 @@ export function CTASection() {
             {[
               { icon: Phone, label: 'Call Us', text: '+91 99535 39988', href: 'tel:+919953539988' },
               { icon: MapPin, label: 'Visit Us', text: '105 Allah Mohall, Delhi-110020', href: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71742.94756270468!2d77.21849006155017!3d28.5579959648869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce7a28b48cff3%3A0xfff17363200598!2sBk%20Gyan%20deep%20public%20school!5e0!3m2!1sen!2sin!4v1766335766201!5m2!1sen!2sin' },
-              { icon: Sparkles, label: 'Email Us', text: 'admissions@bkgyandeep.edu', href: 'mailto:admissions@bkgyandeep.edu' },
+              { icon: Sparkles, label: 'Email Us', text: 'lalitbidhuri07@gmail.com', href: 'mailto:lalitbidhuri07@gmail.com' },
             ].map((contact, index) => {
               const Icon = contact.icon;
               return (

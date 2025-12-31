@@ -148,9 +148,9 @@ ${formData.message}
                   </div>
                   <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary">Email Us</h3>
                   <p className="text-muted-foreground leading-relaxed group-hover:text-foreground/90">
-                    General: info@bkgyandeep.edu <br />
-                    Admissions: admissions@bkgyandeep.edu <br />
-                    Careers: careers@bkgyandeep.edu
+                    General: lalitbidhuri07@gmail.com <br />
+                    Admissions: lalitbidhuri07@gmail.com <br />
+                    Careers: lalitbidhuri07@gmail.com
                   </p>
                 </CardContent>
               </Card>
@@ -259,13 +259,13 @@ ${formData.message}
                 <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary">School Hours</h3>
                 <div className="space-y-4 text-muted-foreground group-hover:text-foreground/90">
                   <div className="flex justify-between py-3 px-4 bg-muted/50 rounded-2xl group-hover:bg-primary/5 transition-colors">
-                    <span>Monday - Friday:</span>
-                    <span className="font-semibold text-foreground">8:00 AM - 3:30 PM</span>
+                    <span>Monday - Saturday:</span>
+                    <span className="font-semibold text-foreground">8:00 AM - 1:30 PM</span>
                   </div>
-                  <div className="flex justify-between py-3 px-4 bg-muted/50 rounded-2xl group-hover:bg-primary/5 transition-colors">
-                    <span>Saturday:</span>
+                  {/* <div className="flex justify-between py-3 px-4 bg-muted/50 rounded-2xl group-hover:bg-primary/5 transition-colors">
+                    <span>:</span>
                     <span className="font-semibold text-foreground">9:00 AM - 12:00 PM</span>
-                  </div>
+                  </div> */}
                   <div className="flex justify-between py-3 px-4 bg-muted/50 rounded-2xl group-hover:bg-primary/5 transition-colors">
                     <span>Sunday:</span>
                     <span className="font-semibold text-foreground">Closed</span>
@@ -327,7 +327,7 @@ ${formData.message}
                   <ArrowRight className="h-5 w-5 ml-2 transition-transform duration-300" />
                 </Button>
               </Link>
-              {/* <Link href="mailto:admissions@bkgyandeep.edu">
+              {/* <Link href="mailto:lalitbidhuri07@gmail.com">
                 <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary transition-all duration-300 shadow-xl">
                   Email Admissions
                   <ArrowRight className="h-5 w-5 ml-2 transition-transform duration-300" />
